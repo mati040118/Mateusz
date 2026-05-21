@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Ogrodzenia",
+    "slug": "ogrodzenia-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "ogrodzenia",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "plugins": [
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Aplikacja używa mikrofonu do wpisywania danych głosem i nagrywania notatek.",
+          "speechRecognitionPermission": "Aplikacja używa rozpoznawania mowy do wpisywania danych głosem."
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "pl.firmaogrodzenia.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Aplikacja używa mikrofonu do wpisywania danych głosem i nagrywania notatek.",
+        "NSSpeechRecognitionUsageDescription": "Aplikacja używa rozpoznawania mowy do wpisywania danych głosem."
+      }
+    },
+    "android": {
+      "package": "pl.firmaogrodzenia.app",
+      "permissions": [
+        "RECORD_AUDIO"
+      ]
+    }
+  }
+}
