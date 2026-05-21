@@ -27,7 +27,8 @@ jobs:
 
       - name: Build APK
         run: eas build --platform android --profile preview --non-interactive --wait --json > eas-build-result.json
-
+      - name: Initialize EAS project
+        run: eas init --non-interactive
       - name: Download APK
         run: node scripts/download-eas-apk.js eas-build-result.json ogrodzenia.apk
 
